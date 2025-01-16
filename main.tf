@@ -18,6 +18,6 @@ resource "aws_instance" "app_server" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "terraform_create_ec2_instance"
+    Name = var.instance_name
   }
 }
